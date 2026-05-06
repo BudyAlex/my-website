@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسطى محمد جلال | ميكانيكي سيارات محترف</title>
+
+    <meta name="description" content="الأسطى محمد جلال - أكثر من 30 سنة خبرة في تصليح السيارات">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap');
+
+        :root {
+            --primary: #c8102e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #0a0f1c;
+            color: #e2e8f0;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.95);
+            border-bottom: 2px solid var(--primary);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)),
+            url('https://picsum.photos/id/1015/2000/1200') center/cover;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+        }
+
+        .highlight {
+            color: var(--primary);
+        }
+
+        .phone-big {
+            display: inline-block;
+            margin-top: 20px;
+            background: var(--primary);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-size: 1.8rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* SERVICES */
+        .services {
+            padding: 80px 20px;
+            background: #0f172a;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .service-card {
+            background: #1e2937;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        /* ABOUT */
+        .about {
+            padding: 80px 20px;
+            background: #111827;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            max-width: 1200px;
+            margin: auto;
+            align-items: center;
+        }
+
+        .about img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        /* GALLERY */
+        .gallery {
+            padding: 80px 20px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        /* CONTACT */
+        .contact {
+            padding: 80px 20px;
+            background: #1a2538;
+            text-align: center;
+        }
+
+        .phone-number {
+            font-size: 2rem;
+            color: var(--primary);
+            font-weight: bold;
+            display: block;
+            margin: 15px 0;
+            text-decoration: none;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 450px;
+            border-radius: 20px;
+        }
+
+        /* WHATSAPP */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: #25D366;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            z-index: 9999;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .about-content { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="navbar">
+    <div class="nav-container">
+        <div class="logo">الأسطى <span>محمد جلال</span></div>
+    </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <div style="width:100%">
+        <h1>تصليح سيارتك <span class="highlight">بثقة واحترافية</span></h1>
+        <p>أكثر من 30 سنة خبرة</p>
+        <a href="tel:010674666793" class="phone-big">📞 0106 7466 793</a>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+    <div class="services-grid">
+
+        <div class="service-card">
+            <i class="fas fa-cogs"></i>
+            <h3>إصلاح المحركات</h3>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-car"></i>
+            <h3>صيانة دورية</h3>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-gears"></i>
+            <h3>ناقل الحركة</h3>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-bolt"></i>
+            <h3>كهرباء السيارات</h3>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <div class="about-content">
+
+        <img src="WhatsApp Image 2026-05-06 at 11.41.12 AM.jpeg" alt="">
+
+        <div>
+            <h2>عن الأسطى محمد جلال</h2>
+            <p>أكثر من 30 سنة خبرة في ميكانيكا السيارات بجودة عالية وأسعار مناسبة.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+    <div class="gallery-grid">
+
+        <img src="WhatsApp Image 2026-05-06 at 11.53.56 AM.jpeg">
+        <img src="WhatsApp Image 2026-05-06 at 11.53.55 AM.jpeg">
+        <img src="WhatsApp Image 2026-05-06 at 11.53.55 AM (1).jpeg">
+        <img src="WhatsApp Image 2026-05-06 at 11.41.12 AM.jpeg">
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+
+    <h2>اتصل بنا</h2>
+
+    <a href="tel:010674666793" class="phone-number">0106 7466 793</a>
+
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps?q=30.1806583,31.4435733&z=17&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+
+</section>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/2010674666793" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
